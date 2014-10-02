@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.1'
+version = '0.1.0'
 
 setup(
     name='ckanext-openspending',
@@ -21,10 +21,11 @@ setup(
     zip_safe=False,
     install_requires=[
         # -*- Extra requirements: -*-
+        'ckanext-budgets'
+        'requests'
     ],
     entry_points='''
         [ckan.plugins]
-        # Add plugins here, e.g.
-        # myplugin=ckanext.openspending.plugin:PluginClass
+        openspending=ckanext.openspending.plugin:OpenSpendingPlugin
     ''',
 )
