@@ -14,11 +14,14 @@ OpenSpending.
 Installation
 ------------
 
-Simply clone this library and run
 
-::
+This CKAN extension can be installed via `pypi <http://pypi.python.org>`__ using ``pip``::
 
-    python setup.py install
+    pip install ckanext-openspending
+
+If you have followed the `CKAN installation documentation <http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html>`__ remember to activate your CKAN environment (virtual environment) before installing the extension::
+
+    . /usr/lib/ckan/default/bin/activate
 
 Then add ``openspending`` to the list in ``ckan.plugins`` in your CKAN
 configuration file. Restart your webserver and budget data will now be
